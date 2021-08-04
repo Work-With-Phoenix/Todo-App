@@ -42,7 +42,8 @@ export default function App() {
        
         </View>
       </View>
-     < KeyboardAvoidingView 
+   
+    <KeyboardAvoidingView 
      behavior={Platform.OS === "ios" ? "padding" : "height"}
      style={styles.writeTaskWrapper}
      >
@@ -53,7 +54,7 @@ export default function App() {
     </View>
   </TouchableOpacity>
      </KeyboardAvoidingView>
-      
+
      </View>
     
    
@@ -67,10 +68,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#F3F4F6',
     paddingTop:80,
     paddingHorizontal:20,
+    
 
   },
   tasksWrapper: {
-
+    
   },
   sectionTitle: {
     fontSize: 24,
@@ -80,6 +82,7 @@ const styles = StyleSheet.create({
   items:{
     marginTop : 10
   },
+ 
   writeTaskWrapper :{
     position : 'absolute',
     bottom: 60,
@@ -87,6 +90,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent : 'space-around',
     alignItems : 'center',
+    paddingTop : 20
     
   },
   input : {
@@ -98,6 +102,7 @@ const styles = StyleSheet.create({
     borderColor: '#C0C0C0',
     borderRadius: 60
   },
+ 
   addWrapper :{
     width : 60,
     height : 60,

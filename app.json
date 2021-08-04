@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Todo List App with react native",
+    "githubUrl": "https://github.com/tracymuzembi/Todo-App.git"
   }
 }
