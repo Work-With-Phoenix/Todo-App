@@ -2,15 +2,18 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 
-const Task = () => {
+const Task = (props) => {
     return (
         <View style={styles.item}>
             <View style={styles.itemLeft}>
             <View style={styles.square}></View>
-            <Text style={styles.itemText}>Task item 1</Text>
+            <Text style={styles.itemText}>{props.text}</Text>
             </View>
             <View style={styles.circular}></View>
+
+
         </View>
+
     )
 }
 
